@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import {  StyleSheet  } from "react-native";
 import CategoriesScreen from "./screens/CategoriesScreen";
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
@@ -34,17 +34,17 @@ export default function App() {
           <Stack.Screen
             name="MealsOverview"
             component={MealsOverviewScreen}
-
             // don't use below code, better to do it form the components itself
-           
+
             // options={({ route, navigation }) => {
             //   const catId = route.params.categoryId;
             //   return {
             //     title:catId,
             //   };
             // }}
+
           />
-          <Stack.Screen name="MealDetail" component={MealDetailsScreen}/>
+          <Stack.Screen name="MealDetail" component={MealDetailsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
